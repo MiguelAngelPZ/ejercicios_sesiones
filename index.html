@@ -1,0 +1,55 @@
+<!DOCTYPE html> <!--indicar al navegador web la versión de HTML que usarás, para este caso HTML 5-->
+<html lang="es"> <!--indica el punto de partida de la página, todo lo que se encuentra dentro será el contenido que el navegador tomará en cuenta para mostrar a los usuarios.-->
+<head> <!--En esta etiqueta se encuentra toda la información relevante del sitio web pero que no se muestra en la interfaz visua-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica sesión1</title> <!--Esta etiqueta permite indicar cuál es el título que el navegador debe mostrar cuando un usuario este navegando en nuestro sitio web-->
+    <link rel="stylesheet" href="styles.css"> <!--referenciar la hoja de estilos que está en styles.cssnuestro index.html, para que los estilos se apliquen-->
+</head>
+<body> <!--encontramos todo lo que vemos cada vez que visitamos un sitio. Botones, textos, imágenes y demás elementos-->
+    <header class="header"> <!--Para evitar que en caso agreguemos algún otro header en alguna sección de la página, vamos a agregarle un atributo de clase a la etiqueta header y aplicar el estilo a dicha etiqueta a través del selector de clase-->
+        <!-- Logo con link a la página principal -->
+        <a href="/" class="logo">  <!--Para que en css se de espacio a cada parte de la barra de navegación-->
+          <img src="https://getmatcha.com/wp-content/uploads/2020/01/Icon-green.png" alt="Matcha"/>
+        </a>
+        <!-- Menú de navegación -->
+        <nav class="navbar"> <!--Para que en css se de espacio a cada parte de la barra de navegación-->
+          <ul>
+            <li>Platform</li>
+            <li>Pricing</li>
+            <li>Customers</li>
+            <li>Resources</li>
+            <li>About</li>
+          </ul>
+        </nav>
+        <!-- Contenedor de acciones de usuario -->
+        <div class="actions"> <!--Para que en css se de espacio a cada parte de la barra de navegación-->
+          <a>Iniciar sesión</a>
+          <button>Comienza la prueba gratuita</button>
+        </div>
+    </header>
+    <section class="main"> <!--usar un contenedor que englobe a todo nuestro contenido y aplicar el margen a dicho contenedor.-->
+        <h1>Contruye tu blog. Construye tu negocio</h1>    
+        <h4>Publique artículos al instante, genere más comercio, haga crecer su lista de correo electrónico y vea el impacto de su blog en las ventas</h4> 
+        </p>
+        <form action=""> <!--el formulario envíe el correo que el usuario ingresa y por ende el tipo de botón a usar es submit-->
+            <input type="email"> <!--La mayoría de las cajas de texto se definen con la etiqueta <input />-->
+            <button type="submit" class="texto-boton">
+                Pruebalo ahora &rarr;
+            </button>
+        </form>
+        <p class="texto-promocional">
+            Comience a publicar hoy con una <strong>prueba gratuita de 7 días.</strong>
+        </p class="texto-promocional">
+        <p>
+            <strong>Sin tarjeta de credito</strong> requerida.
+        </p>
+        <img src="https://ignos.blog/wp-content/uploads/2021/04/capterra.png" alt="imagen capterra" width="600" height="400" />
+        <img src="images/imagen1.png" alt="Imagen de tarea1">
+    </section>
+    <p>
+      <strong>Elaboró: Miguel Angel PZ
+    </p>
+</body>
+</html>

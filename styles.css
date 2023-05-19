@@ -1,0 +1,94 @@
+/*Debe crear un archivo denominado styles.css, en la misma carpeta donde se encuentra index.html*/
+body {
+    background-color: #fffbf7; /*Color de fondo de la página*/
+}
+
+/*Para el caso de la barra de navegación agregaremos un margen superior de 40px y un margen a cada lado de 20px. Ya que este margen queremos dárselo a toda la barra, se lo aplicaremos al elemento header*/
+.header { /*asignándolo a todos los hijos directos de la etiqueta header*/ 
+    /*margin-top: 40px; /*margen superior de 40px*/
+    /*margin-left: 20px; /*margen a cada lado de 20px*/
+    /*margin-right: 20px; /*margen a cada lado de 20px*/
+    margin: 40px 20px 0px;
+    font-size: 0; /*da tamaño a los espacios en blanco es el tamaño de la fuente,*/
+    height: 45px; /*barra debe ser de 45px*/
+    font-family: sans-serif; /*deben usar la fuente sans-serif*/
+}
+
+/*En nuestro caso usaremos el hack del font-size, resulta que si lo que le da tamaño a los espacios en blanco es el tamaño de la fuente, podemos darle un tamaño de fuente 0 al contenedor y luego asignar el tamaño de fuente correcto en cada elemento hijo. Hagamos una prueba, teniendo en cuenta que el tamaño de la fuente será de 16px para el menú de navegación:*/
+.header > * {
+    display: inline-block; /*mezcla lo mejor de blocke inline, permitiendo cambiar el diseño a un comporamiento como el inlinepero permitiendo cambiar los márgenes verticales y la altura como cualquier elemento con display block*/
+    font-size: 16px; /*tamaño de la fuente será de 16px para el menú de navegación en cada hijo*/
+    vertical-align: middle; /*para alinear al centro verticalmente*/
+    height: 100%; /*tenga una altura del 100%*/
+    line-height: 45px; /*el tamaño de altura que ocupará cada línea de texto, en este caso debería ser igual al tamaño del contenedor (45px)*/
+}
+
+/*/li { /*Ver si se quita o se mantiene*/
+    /*display: inline; /*reemplazada la pantalla de los lia inline*/
+  /*}*/
+
+li {
+    display: inline;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.logo > img { /*Para que el logo este centrado verticalmente*/
+    width: 15%; /*logo va a usar un 15% del tamaño de su contenedor*/
+}
+
+.navbar {
+    width: 70%; /*menú de navegación un 70% del tamaño de su contenedor*/
+    text-align: center; /*cambiaría el peso de la fuente en los textos del menú de navegación y los botones ya que aunque no parezcan distintos en la web original*/
+    color: #025157;
+    font-weight: 500;
+}
+
+.actions {
+    width: 15%; /*acciones de usuario el 15% restante del tamaño de su contenedor*/
+    text-align: right;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.actions > * {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.actions a {
+    color: #67b54b;
+}
+
+/*El color del texto Sign Indebe ser #67b54by el botón de Start free trialdebe tener color de texto blanco, color de fondo #67b54b, un relleno de 14pxhacia los costados y 12pxen la parte inferior y superior. Por último el botón no debe tener borde, pero un radio de borde de 5pxpara tener esquinas redondeadas.*/
+.actions button {
+    color: white;
+    background-color: #67b54b;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: 0;
+    border-radius: 5px;
+}
+
+.main { /*Este es el estilo y margen para el contenedor <section>con clase .main*/
+    margin-top: 140px;
+    text-align: center;
+}
+
+h1 {
+    color: #46484c; /*Color del titulo*/
+    text-align: center; /*Formato centrado*/
+}
+
+h4 {
+    color: #8b8b8bcc; /*Color de la etiqueta*/
+    font-family: verdana; /*Formato de fuente*/
+    font-size: 20px; /*Tamaño de fuente*/
+}
+
+button {
+    color: #fff; /*Color de la fuente*/
+    background-color: #025157; /*Color del boton*/
+}

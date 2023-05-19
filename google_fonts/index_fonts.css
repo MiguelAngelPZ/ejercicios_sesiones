@@ -1,0 +1,22 @@
+/*Y aqui hace la referecnia respectiva*/
+.fuente1{
+    font-family: 'Pangolin', cursive;
+    font-size: 80px;
+}
+
+.fuente2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 5rem; /* 5 x 16px base = 80px */
+    padding: .5em;
+    margin: .25em;
+}
+
+html{
+    font-size: 70%;
+}
+
+@media(min-width: 600px){
+    html{
+        font-size: 100%;
+    }
+}
