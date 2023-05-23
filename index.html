@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles.css"> <!--referenciar la hoja de estilos que está en styles.cssnuestro index.html, para que los estilos se apliquen-->
 </head>
 <body> <!--encontramos todo lo que vemos cada vez que visitamos un sitio. Botones, textos, imágenes y demás elementos-->
+  <section class="fixed-header">  
     <header class="header"> <!--Para evitar que en caso agreguemos algún otro header en alguna sección de la página, vamos a agregarle un atributo de clase a la etiqueta header y aplicar el estilo a dicha etiqueta a través del selector de clase-->
         <!-- Logo con link a la página principal -->
         <a href="/" class="logo">  <!--Para que en css se de espacio a cada parte de la barra de navegación-->
@@ -29,6 +30,7 @@
           <button>Comienza la prueba gratuita</button>
         </div>
     </header>
+  </section>
     <section class="main"> <!--usar un contenedor que englobe a todo nuestro contenido y aplicar el margen a dicho contenedor.-->
         <h1>Contruye tu blog. Construye tu negocio</h1>    
         <h4>Publique artículos al instante, genere más comercio, haga crecer su lista de correo electrónico y vea el impacto de su blog en las ventas</h4> 
@@ -45,6 +47,41 @@
         <p>
             <strong>Sin tarjeta de credito</strong> requerida.
         </p>
+    </section>
+    <section class="promo">
+      <article class="explanatory-video">
+        <video 
+            controls 
+            poster="https://cdn.videvo.net/videvo_files/video/premium/video0036/thumbnails/computer_code00_small.jpg"> <!--controls contreles para nuestro video-->
+            <source
+              type="video/webm"
+              src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.webm"
+            />
+            <source
+              type="video/mp4"
+              src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.mp4"
+            />
+        </video> 
+        <img
+          src="https://images.vexels.com/media/users/3/206269/isolated/preview/5bf110f14d50531aaca26c251c3441aa-doodle-de-flecha-vertical.png"
+          alt="See how it works"
+        />
+      </article>
+        <article class="publish">
+          <h3>Publica tu blog en minutos, no en horas.</h3>
+          <p>
+            Su blog es su activo más poderoso para construir, atraer y retener una audiencia leal. Pero no tienes horas para crear contenido que puede o no funcionar. Con Matcha, publique instantáneamente desde nuestra biblioteca de más de 10,000 artículos escritos profesionalmente y cree su lista de correo electrónico más rápido con nuestra poderosa herramienta de conversión.
+          </p>
+          <form>
+            <p>Comienza a publicar hoy:</p>
+            <div>
+              <input type="text" placeholder="Ingresar email" />
+              <button>Iniciar mi prueba</button>
+            </div>
+          </form>
+        </article>
+    </section>
+    <section>
         <img src="https://ignos.blog/wp-content/uploads/2021/04/capterra.png" alt="imagen capterra" width="600" height="400" />
         <img src="images/imagen1.png" alt="Imagen de tarea1">
     </section>
