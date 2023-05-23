@@ -101,15 +101,11 @@ button {
     background-color: #025157; /*Color del boton*/
 }
 
-.promo {
+.promo { /*formato al video*/
     display: flex;
     width: 70%;
     margin: 100px auto;
     align-items: center;
-}
-
-.publish {
-    /* container styles if any */
 }
   
 .publish h3 {
