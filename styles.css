@@ -1,6 +1,6 @@
 /*Debe crear un archivo denominado styles.css, en la misma carpeta donde se encuentra index.html*/
 body {
-    background-color: #83f0b4; /*Color de fondo de la página*/
+    background-color: #e9f083; /*Color de fondo de la página*/
 }
 
 /*Para el caso de la barra de navegación agregaremos un margen superior de 40px y un margen a cada lado de 20px. Ya que este margen queremos dárselo a toda la barra, se lo aplicaremos al elemento header*/
